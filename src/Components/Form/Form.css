@@ -1,0 +1,92 @@
+form label{
+    font-weight: bold;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin-bottom: 50px;
+}
+form input[type='text']{
+    padding: 10px 10px;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.form-group select{
+    width: 50px;
+    margin-top: 5px;
+}
+
+form label span{
+    color: red;
+}
+
+form input[type='button']{
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    background-color: gold;
+
+}
+
+.address .form-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+    
+}
+
+#country, #province{
+    padding: 10px;
+    width: 100%;
+}
+
+.birth{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.birth-group{
+    display: flex;
+    flex-direction:column;
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button input[type='button']:hover{
+    cursor: pointer;
+    background-color: rgb(250, 227, 96);
+
+}
+
+@media only screen and (max-width: 768px){
+    .form-group{
+        width: 100%;
+    }
+    .birth-group{
+        width: 100%;
+    }
+    .birth{
+        display: flex;
+        flex-direction: column;
+    }
+    form input[type='button']{
+        width: 100%;
+    }
+}
